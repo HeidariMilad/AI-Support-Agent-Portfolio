@@ -11,6 +11,8 @@
     "@types/node": "^16.18.126",
     "@types/react": "^19.1.12",
     "@types/react-dom": "^19.1.9",
+    "framer-motion": "^12.23.12",
+    "lucide-react": "^0.542.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-scripts": "5.0.1",
@@ -21,7 +23,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "screenshot": "npm run build && node scripts/capture-screenshots.js"
   },
   "eslintConfig": {
     "extends": [
@@ -40,5 +43,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.0",
+    "playwright": "^1.47.0",
+    "serve": "^14.2.4"
   }
 }
